@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/txtOurTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textSize="30sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:layout_margin="20dp"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOurTeam"
+        app:layout_constraintRight_toLeftOf="@+id/cardImageTwo"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        >
+
+            <ImageView
+                android:id="@+id/imgOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_one"
+                />
+
+   </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtOneT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adams O"
+        android:textSize="17sp"
+        android:textColor="#191818"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardImageOne"
+        app:layout_constraintRight_toLeftOf="@id/txtTwoT"
+
+
+        />
+    <TextView
+        android:id="@+id/txtOneB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executive Officer"
+        android:textSize="17sp"
+        android:textColor="#191818"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneT"
+        app:layout_constraintRight_toLeftOf="@+id/txtTwoB"
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txtOurTeam"
+        app:layout_constraintLeft_toRightOf="@id/cardImageOne"
+        app:layout_constraintRight_toLeftOf="@id/cardImageThree"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imgTwo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_two"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtTwoT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belly L"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/cardImageTwo"
+        app:layout_constraintLeft_toRightOf="@id/txtOneT"
+        app:layout_constraintRight_toRightOf="@+id/txtThreeT"
+
+
+        />
+    <TextView
+        android:id="@+id/txtTwoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/txtTwoT"
+        app:layout_constraintLeft_toRightOf="@+id/txtOneB"
+        app:layout_constraintRight_toLeftOf="@+id/txtThreeB"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txtOurTeam"
+        app:layout_constraintLeft_toRightOf="@id/cardImageTwo"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imgThree"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_three"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtThreeT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/cardImageThree"
+        app:layout_constraintLeft_toRightOf="@id/txtTwoT"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+    <TextView
+        android:id="@+id/txtThreeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analysis"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/txtThreeT"
+        app:layout_constraintLeft_toRightOf="@+id/txtTwoB"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneB"
+        app:layout_constraintRight_toLeftOf="@+id/cardImageFive"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imgFour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_four"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtFourT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mike W"
+        android:textSize="17sp"
+        android:textColor="#191818"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardImageFour"
+        app:layout_constraintRight_toLeftOf="@id/txtFiveT"
+
+
+        />
+    <TextView
+        android:id="@+id/txtFourB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UX Designer"
+        android:textSize="17sp"
+        android:textColor="#191818"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFourT"
+        app:layout_constraintRight_toLeftOf="@+id/txtFiveB"
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+       app:layout_constraintTop_toBottomOf="@id/txtTwoB"
+        app:layout_constraintLeft_toRightOf="@id/cardImageFour"
+        app:layout_constraintRight_toLeftOf="@id/cardImageSix"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imgFive"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_five"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtFiveT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin John"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/cardImageFive"
+        app:layout_constraintLeft_toRightOf="@id/txtFourT"
+        app:layout_constraintRight_toLeftOf="@+id/txtSixT"
+
+
+        />
+    <TextView
+        android:id="@+id/txtFiveB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Developer"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/txtFiveT"
+        app:layout_constraintLeft_toRightOf="@+id/txtFourB"
+        app:layout_constraintRight_toLeftOf="@+id/txtSixB"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImageSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txtThreeB"
+        app:layout_constraintLeft_toRightOf="@id/cardImageFive"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imgSix"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_six"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtSixT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laura M"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/cardImageSix"
+        app:layout_constraintLeft_toRightOf="@id/txtFiveT"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+    <TextView
+        android:id="@+id/txtSixB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Dev"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        app:layout_constraintTop_toBottomOf="@id/txtSixT"
+        app:layout_constraintLeft_toRightOf="@+id/txtFiveB"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textSize="30sp"
+        android:textColor="#191818"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        />
+
+    <TextView
+        android:id="@+id/txtStrOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_one"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTwo"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtStrTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_one"
+        android:textSize="15sp"
+        android:textColor="#191818"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtStrOne"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
